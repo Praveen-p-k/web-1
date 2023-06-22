@@ -1,14 +1,17 @@
-import { createRoot } from "react-dom/client";
-import App from "./pages/routes/index";
-import { store } from "./redux/config/store";
-import { Provider } from "react-redux";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import "./index.css";
-
-const root = createRoot(document.getElementById("my-root") as HTMLElement);
-
-root.render(
-  <Provider store={store}>
-    <App />
-  </Provider>
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
 );
+root.render(
+  <Router>
+    <App />
+  </Router>
+);
+
+{/* <button onClick={() => editing()}>edit(&#x270E;)</button>
+<button >Delete(&#x2716;)</button> */}
