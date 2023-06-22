@@ -1,0 +1,152 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "themes.scss";
+
+.stacks {
+  @apply h-24 w-24 cursor-pointer hover:border border-white-15 rounded-xl;
+}
+
+.bottom-border {
+  @apply border-b md:mb-1 mb-3 hover:border-b-blue-500;
+}
+
+.navbar {
+  @apply hover:text-blue-500 hover:bg-opacity-50 border-primary cursor-pointer;
+}
+
+.social-icons {
+  @apply md:h-5 md:w-5 h-4 w-3 hover:opacity-100 opacity-80 cursor-pointer;
+}
+
+.works {
+  @apply rounded-3xl mt-3 ml-3 h-60 w-60;
+}
+
+.light {
+  @apply bg-white-5;
+}
+
+.send-container {
+  @apply flex flex-col h-full w-full;
+  .header {
+    @apply flex w-full h-[54px] justify-between items-center ps-2;
+
+    .header-text {
+      @apply flex items-center text-xl text-white-85;
+    }
+  }
+  .send-body {
+    @apply flex w-full h-full max-[357px]:h-[90%] items-center justify-center;
+    .send-inner-container {
+      @apply flex w-[950px] h-[879px] overflow-auto max-[357px]:h-full max-[357px]:w-[95%] rounded-xl box-border justify-center items-center border border-solid border-white-15;
+      background: #211e1e;
+      .card {
+        @apply flex flex-col w-5/6 h-[90%]  max-[357px]:h-[95%] max-[357px]:w-[95%] gap-3;
+        .send-header {
+          @apply flex flex-col justify-between gap-2;
+          .title-bar {
+            @apply flex items-center justify-between;
+            .title {
+              @apply flex items-center text-xl text-white-85;
+            }
+          }
+          .title-header {
+            @apply text-primary text-center font-extrabold text-4xl;
+          }
+          .address-container {
+            @apply flex flex-col gap-4;
+            .placeholder {
+              color: #ffffff73;
+            }
+            .input-container {
+              @apply flex w-full items-center h-12 border border-solid border-white-25 overflow-hidden rounded-lg px-2;
+
+              .password-input {
+                @apply flex w-full bg-transparent text-white-75;
+              }
+            }
+            .input-validation {
+              color: #ffffff73;
+              &.success {
+                color: #4cb944;
+              }
+            }
+          }
+        }
+        .accounts-list {
+          @apply flex h-full flex-col p-2 bg-white-10 rounded-sm;
+          .transfer-self {
+            @apply flex items-center justify-start h-12 text-lg text-white-85 p-4 hover:bg-white-15 rounded-sm divide-y;
+          }
+          &.no-bg {
+            @apply bg-transparent border border-white-10 rounded-lg;
+          }
+        }
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.header-container {
+  @apply flex flex-col h-full w-full;
+  .header {
+    @apply flex w-full h-[1px] justify-between items-center ps-2;
+
+    .header-text {
+      @apply flex items-center text-xl text-white-85;
+    }
+  }
+  .header-body {
+    @apply flex w-full h-full max-[357px]:h-[90%] items-center justify-center;
+    .header-inner-container {
+      @apply flex w-[950px] h-[90px] overflow-auto max-[357px]:h-full max-[357px]:w-[95%] rounded-xl box-border justify-center items-center border border-solid border-white-15;
+      background: #211e1e;
+      .card {
+        @apply flex flex-col w-5/6 h-[90%]  max-[357px]:h-[95%] max-[357px]:w-[95%] gap-3;
+        .header-pointer {
+          @apply flex flex-col justify-between gap-2;
+          .title-bar {
+            @apply flex items-center justify-between;
+            .title {
+              @apply flex items-center text-xl text-white-85;
+            }
+          }
+          .address-container {
+            @apply flex flex-col gap-4;
+            .placeholder {
+              color: #ffffff73;
+            }
+            .input-container {
+              @apply flex w-full items-center h-12 border border-solid border-white-25 overflow-hidden rounded-lg px-2;
+
+              .password-input {
+                @apply flex w-full bg-transparent text-white-75;
+              }
+            }
+            .input-validation {
+              color: #ffffff73;
+              &.success {
+                color: #4cb944;
+              }
+            }
+          }
+        }
+        .accounts-list {
+          @apply flex h-full flex-col p-2 bg-white-10 rounded-sm;
+          .transfer-self {
+            @apply flex items-center justify-start h-12 text-lg text-white-85 p-4 hover:bg-white-15 rounded-sm divide-y;
+          }
+          &.no-bg {
+            @apply bg-transparent border border-white-10 rounded-lg;
+          }
+        }
+      }
+    }
+  }
+}

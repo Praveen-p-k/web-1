@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "../src/assets/styles/global.scss";
+
+.c {
+  color: #ffc64d;
+  background-color: rgb(44, 43, 43);
+}
